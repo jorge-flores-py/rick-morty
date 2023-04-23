@@ -2,4 +2,4 @@
 
 Extraemos los datos de los episodios capitulos y las diferentes locaciones donde se desarrolla la serie 
 
-![Texto alternativo de la imagen]("imagenes/13.png")
+img src="imagenes/13.png"
