@@ -1,0 +1,27 @@
+666cbc39ee16
+*** Reading local file: /opt/airflow/logs/dag_id=carga_de_datos/run_id=manual__2023-05-18T13:54:36.255010+00:00/task_id=obtener_datos/attempt=1.log
+[2023-05-18 13:54:43,171] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: carga_de_datos.obtener_datos manual__2023-05-18T13:54:36.255010+00:00 [queued]>
+[2023-05-18 13:54:43,186] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: carga_de_datos.obtener_datos manual__2023-05-18T13:54:36.255010+00:00 [queued]>
+[2023-05-18 13:54:43,187] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-18 13:54:43,188] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2023-05-18 13:54:43,189] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-18 13:54:43,214] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): obtener_datos> on 2023-05-18 13:54:36.255010+00:00
+[2023-05-18 13:54:43,218] {standard_task_runner.py:52} INFO - Started process 216 to run task
+[2023-05-18 13:54:43,221] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'carga_de_datos', 'obtener_datos', 'manual__2023-05-18T13:54:36.255010+00:00', '--job-id', '38', '--raw', '--subdir', 'DAGS_FOLDER/dag_carga_automatica_personajes.py', '--cfg-path', '/tmp/tmp30t5u59t', '--error-file', '/tmp/tmpe_ko5cte']
+[2023-05-18 13:54:43,223] {standard_task_runner.py:80} INFO - Job 38: Subtask obtener_datos
+[2023-05-18 13:54:43,304] {task_command.py:371} INFO - Running <TaskInstance: carga_de_datos.obtener_datos manual__2023-05-18T13:54:36.255010+00:00 [running]> on host 666cbc39ee16
+[2023-05-18 13:54:43,435] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=JORGE
+AIRFLOW_CTX_DAG_ID=carga_de_datos
+AIRFLOW_CTX_TASK_ID=obtener_datos
+AIRFLOW_CTX_EXECUTION_DATE=2023-05-18T13:54:36.255010+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-05-18T13:54:36.255010+00:00
+[2023-05-18 13:55:12,182] {base.py:68} INFO - Using connection ID 'amazon_redshift' for task execution.
+[2023-05-18 13:55:16,432] {python.py:173} INFO - Done. Returned value was: None
+[2023-05-18 13:55:16,455] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=carga_de_datos, task_id=obtener_datos, execution_date=20230518T135436, start_date=20230518T135443, end_date=20230518T135516
+[2023-05-18 13:55:16,529] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-05-18 13:55:16,565] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+
